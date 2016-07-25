@@ -16,7 +16,6 @@
         activate();
         ///
         function activate() {
-            console.log('ola');
 
         }
     }
