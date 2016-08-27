@@ -12,11 +12,18 @@
 
     function ApiControllerUserShow($http, $window) {
         var vm = this;
+        
+        vm.changeLanguage = changeLanguage;
+
 
         activate();
-        ///
+        
         function activate() {
 
+        }
+        
+        function changeLanguage(language){
+            console.log('swsw');
         }
     }
     angular.module('app')

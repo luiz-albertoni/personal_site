@@ -9,8 +9,8 @@
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
 
-    <body ng-app="app">
-        <div id="wrapper">
+    <body ng-app="app" style="background-color: #eee">
+        <div id="wrapper" ng-controller="ApiControllerUserShow as vm">
             <div>
                 @include('default.left_side_bar')
             </div>
@@ -18,6 +18,9 @@
             <div class="wrapper wrapper-content">
                 @yield('content')
             </div>
+
+            @include('default.footer')
+
         </div>
     </body>
 
