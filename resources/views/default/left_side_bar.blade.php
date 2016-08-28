@@ -11,9 +11,8 @@
                 <img alt="image" style="height: 100px" class="img-responsive img-responsive" src="/images/logo.png"/>
             </div>
 
-
             <div >
-                <ul class="nav navbar-nav container" style="position:absolute;bottom: 0;    margin-left: 15%;;float: left;">
+                <ul class="nav navbar-nav container" style="position:absolute;bottom: 0;margin-left: 15%;;float: left;">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="{{ URL::route('curriculum') }}">Curriculum</a></li>
                     <li><a href="">Blog</a></li>

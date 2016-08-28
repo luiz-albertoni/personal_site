@@ -8,3 +8,6 @@ Route::get('/{locale?}', function ($locale = 'br') {
 })->name('home');
 
 Route::get('/albertoni/curriculum', 'FileController@getCurriculum')->name('curriculum');
+
+
+Route::get('/albertoni/data', 'FileController@rest');

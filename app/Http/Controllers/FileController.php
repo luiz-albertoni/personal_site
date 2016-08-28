@@ -15,4 +15,11 @@ class FileController extends Controller
             $pathToFile = storage_path($filename);
             return response()->file($pathToFile);
         }
+
+    public function rest()
+    {
+        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+    }
+
+
 }
