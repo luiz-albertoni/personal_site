@@ -39,4 +39,16 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => '171614523288240',
+        'client_secret' => 'e95087d14bb67ca071a9203583fcc020',
+        'redirect' => 'http://albertoni.app/albertoni/callback',
+    ],
+
+    'github' => [
+        'client_id' => '71c055e87753d39fa23b',
+        'client_secret' => 'b6f0f829920eb27941d1f9d3f0670a235527ee40',
+        'redirect' => 'http://albertoni.app/albertoni/callback',
+    ],
+
 ];

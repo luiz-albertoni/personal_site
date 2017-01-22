@@ -14,9 +14,8 @@
 
     function ApiControllerUserShow($http, $window, lodash, Restangular) {
         var vm = this;
-         vm.var ="button ok";
-        vm.changeLanguage = changeLanguage;
-
+        vm.changeLanguage   = changeLanguage;
+        vm.validMail        = validMail;
         activate();
         
         function activate() {
@@ -24,11 +23,17 @@
         }
         
         function changeLanguage(language){
+            console.log(language);
+            Restangular.one("/albertoni").post('language', {"language" : language}).then(function(response) {
+                $window.location.reload();
+            })
 
-            Restangular.all('albertoni/data').doGET().then(function(response){
-                window.console.log(response);
-            });
+        }
 
+        function validMail()
+        {
+            console.log('ewde');
+           return false;
         }
     }
     angular.module('app')

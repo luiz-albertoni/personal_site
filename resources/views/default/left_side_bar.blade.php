@@ -16,22 +16,21 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="{{ URL::route('curriculum') }}">Curriculum</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" >
                             <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-{{Lang::getLocale()}} "  />
                             @lang('messages.language')&nbsp;<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                             <li role="presentation">
-                                <a href="{{ URL::route('home', 'br') }}" >
+                                <a href="#" ng-click="vm.changeLanguage('br')" >
                                 <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-br" alt="Português" />&nbsp;Português</a>
                             </li>
                             <li role="presentation">
-                                <a href="{{ URL::route('home', 'us') }}"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-us" alt="English" />&nbsp;English</a>
+                                <a href="#" ng-click="vm.changeLanguage('us')"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-us" alt="English" />&nbsp;English</a>
                             </li>
                             <li role="presentation">
-                                <a href="{{ URL::route('home', 'es') }}"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-es" alt="Espanhol" />&nbsp;Español</a>
+                                <a href="#" ng-click="vm.changeLanguage('es')"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="flag flag-es" alt="Espanhol" />&nbsp;Español</a>
                             </li>
                         </ul>
                     </li>
