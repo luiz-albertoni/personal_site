@@ -1,4 +1,4 @@
 <div>
     {{ $mail['body'] }}
-    
+
 </div>
