@@ -26,6 +26,10 @@ Route::get('/albertoni/post/{post}', 'PostController@getPost');
 
 Route::post('/albertoni/sendMail', 'ContactController@sendMail');
 
-Route::get('/albertoni/redirect', 'SocialAuthController@redirect')->name('redirect');;
+Route::get('/albertoni/redirect', 'SocialAuthController@redirect')->name('redirect');
 
 Route::get('/albertoni/callback', 'SocialAuthController@callback');
+
+
+
+Route::get('/albertoni/blog', 'BlogController@index')->name('blog');

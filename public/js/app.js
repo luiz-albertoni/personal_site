@@ -32,7 +32,6 @@
 
         function validMail()
         {
-            console.log('ewde');
            return false;
         }
     }

@@ -1,0 +1,18 @@
+.dashboard-panel {
+    min-height: 225px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-panel .panel-heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-panel .panel-body li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

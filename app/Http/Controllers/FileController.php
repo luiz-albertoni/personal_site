@@ -19,7 +19,7 @@ class FileController extends Controller
         
         if($language == "br"){
             $filename = '/app/public/Luiz Albertoni-CV-PT.pdf';
-        }else if ($language == "br")
+        }else if ($language == "es")
         {
             $filename = '/app/public/Luiz Albertoni-CV-PT.pdf';
         }
@@ -27,11 +27,5 @@ class FileController extends Controller
         $pathToFile = storage_path($filename);
         return response()->file($pathToFile);
     }
-
-    public function rest()
-    {
-        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
-    }
-
 
 }

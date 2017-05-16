@@ -20,6 +20,45 @@ ng\:form {
   position:absolute;
 }
 
+
+
+/* dash campaign fixes */
+.painel-topic-item.col-sm-3 {
+  min-width: 200px;
+}
+.painel-topic-item table tbody tr td,
+.painel-topic-item table tbody tr td:first-child {
+  padding: 5px;
+}
+
+.painel-topic-item {
+  .ibox-content {
+    height: 375px;
+  }
+
+  .table {
+    height: 80%;
+  }
+}
+
+@media (max-width: 1039px) {
+  .painel-topic-item.col-sm-3 {
+    width: 33%;
+  }
+}
+@media (max-width: 839px) {
+  .painel-topic-item.col-sm-3 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .painel-topic-item.col-sm-3 {
+    width: 100%;
+  }
+}
+
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
