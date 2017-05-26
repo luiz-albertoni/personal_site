@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Config;
@@ -16,7 +17,16 @@ class BlogController extends Controller
     {
         try{
 
-            return view('blog.blog_main', ['is_blog' => true]);
+            $query = Post::orderBy('created_at', 'desc');
+
+            if($search_post = $request->get('search_post'))
+            {
+                $query->where('title', 'like', '%' . $search_post . '%');
+            }
+
+            $posts = $query->orderBy('updated_at', 'desc')->paginate(9);
+
+            return view('blog.blog_main', compact('posts'), ['is_blog' => true, 'posts']);
 
         } catch (\Exception $message)
         {

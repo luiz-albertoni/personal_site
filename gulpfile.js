@@ -21,7 +21,9 @@ gulp.task('copyFonts', function () {
 
 elixir(function(mix) {
     mix
-        .styles(["angular/*.css", "bootstrap/*.css", "flags/*.css" ], "public/css/vendor.css")
+        .styles(["angular/*.css", "bootstrap/*.css", "flags/*.css",  "custom/*.css"], "public/css/vendor.css")
         .scripts(["jquery/*.js", "angular/*.js","bootstrap/*.js", "restAngular/*.js"], "public/js/vendor.js")
-        .version(["css/vendor.css", "js/vendor.js"]);
+        .version(["css/vendor.css", "js/vendor.js"])
+       .copy('resources/assets/tinymce', 'public/tinymce');
 });
+

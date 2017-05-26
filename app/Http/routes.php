@@ -24,12 +24,33 @@ Route::post('/albertoni/language', function (Request $request) {
 
 Route::get('/albertoni/post/{post}', 'PostController@getPost');
 
+
+
 Route::post('/albertoni/sendMail', 'ContactController@sendMail');
 
 Route::get('/albertoni/redirect', 'SocialAuthController@redirect')->name('redirect');
 
 Route::get('/albertoni/callback', 'SocialAuthController@callback');
 
+Route::post('/albertoni/new/post', 'PostController@newPost');
+
+
+
+Route::get('/albertoni/blog/index', 'PostController@index')->name('blog_index');
+
+Route::get('/albertoni/blog/edit/post/{id}', 'PostController@edit')->name('blog_edit');
+
+Route::delete('/albertoni/blog/delete/post/{id}', 'PostController@delete')->name('blog_delete');
+
+Route::post('/albertoni/blog/update/post/{id}', 'PostController@update');
+
+
+Route::get('/albertoni/blog/post/create', function () {
+    return view('blog/add_post');
+})->name('create_index');
+
+
+Route::get('/albertoni/blog/show/post/{id}', 'PostController@show')->name('blog_post');
 
 
 Route::get('/albertoni/blog', 'BlogController@index')->name('blog');

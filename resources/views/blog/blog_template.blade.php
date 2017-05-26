@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ elixir('css/vendor.css') }}">
     <script src="{{ elixir('js/vendor.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('tinymce/tinymce.min.js') }}"></script>
 </head>
 
 <body ng-app="app" style="background-color: #eee">
@@ -16,8 +17,6 @@
     </div>
 
     @include('default.messages')
-
-    @include('default.mail')
 
     @include('default.footer')
 

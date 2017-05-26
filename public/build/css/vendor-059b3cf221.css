@@ -7628,4 +7628,44 @@ button.close {
 .flag.flag-zanzibar {background-position: -176px -165px}
 .flag.flag-zm {background-position: -192px -165px}
 .flag.flag-zw {background-position: -208px -165px}
+.dashboard-panel {
+    min-height: 225px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-panel .panel-heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-panel .panel-body li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* dash campaign fixes */
+.post-item.col-sm-3 {
+    min-width: 200px; }
+
+.post-item table tbody tr td,
+.post-item table tbody tr td:first-child {
+    padding: 5px; }
+
+@media (max-width: 1039px) {
+    .post-item.col-sm-3 {
+        width: 33%; } }
+
+@media (max-width: 839px) {
+    .post-item.col-sm-3 {
+        float: left;
+        width: 50%; } }
+
+@media (max-width: 450px) {
+    .post-item.col-sm-3 {
+        width: 100%; } }
+
 /*# sourceMappingURL=vendor.css.map */

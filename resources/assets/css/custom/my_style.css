@@ -16,3 +16,25 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* dash campaign fixes */
+.post-item.col-sm-3 {
+    min-width: 200px;
+}
+
+.post-item table tbody tr td,
+.post-item table tbody tr td:first-child {
+    padding: 5px; }
+
+@media (max-width: 1039px) {
+    .post-item.col-sm-3 {
+        width: 33%; } }
+
+@media (max-width: 839px) {
+    .post-item.col-sm-3 {
+        float: left;
+        width: 50%; } }
+
+@media (max-width: 450px) {
+    .post-item.col-sm-3 {
+        width: 100%; } }
