@@ -1,6 +1,5 @@
 ls
 cd /home/ubuntu/personal_site
-git reset --hard HEAD
 git pull origin stage
 rm -rf vendor
 composer install
