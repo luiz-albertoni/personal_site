@@ -38,7 +38,7 @@ class PostController extends Controller
         $post = new Post ();
 
         $body = str_replace('../', '',$body);
-        $body = str_replace('images', '/images',$body);
+        $body = str_replace('/upload-/images/', '/upload-images/',$body);
 
         $post->body         = $body;
         $post->title        = $title;
@@ -79,7 +79,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         $body = str_replace('../', '',$body);
-        $body = str_replace('images', '/images',$body);
+        $body = str_replace('/upload-/images/', '/upload-images/',$body);
         $post->body         = $body;
         $post->title        = $title;
         $post->tag          = $tags;
