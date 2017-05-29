@@ -30,8 +30,9 @@ class BlogController extends Controller
 
         } catch (\Exception $message)
         {
-
-            return redirect()->route('home')->with('error', 'Error to send mail.');
+            Log::error($message->getMessage());
+            Log::error($message->getTraceAsString());
+            return redirect()->route('home')->with('error', 'Error to access the Blog.');
 
         }
     }

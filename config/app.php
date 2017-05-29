@@ -161,6 +161,7 @@ return [
 
 
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
     ],
 
     /*

@@ -32,7 +32,12 @@
             <div class="ibox-title" style="text-align: center;  margin-bottom: 20px; border-bottom: 1px solid #e7e7e7;">
                 <h2 style="margin-top: 10px">{{ $post->title}}</h2>
             </div>
+            <div>
             {!! $post->body!!}
+            </div>
+            
+            @include('blog.discuss')
+
         </div>
     </div>
 

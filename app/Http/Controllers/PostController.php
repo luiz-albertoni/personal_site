@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use JavaScript;
 
 class PostController extends Controller
 {
@@ -54,6 +55,11 @@ class PostController extends Controller
     {
         $post  = Post::find($id);
         $posts = Post::get();
+
+        JavaScript::put([
+            'post' => $post
+        ]);
+
         return view('blog/post', compact('post', 'posts'));
     }
 
