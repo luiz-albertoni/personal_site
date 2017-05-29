@@ -34,8 +34,8 @@
                     <div class="panel-body">
                             <div style="margin-left: 10px; margin-top: 5px">
                                 <a style="color: #838383;" href="/albertoni/blog/show/post/{{ $item->id }}" >
-                                <img  style="max-width: 100px; max-height: 100px" src="/images/{{ strtolower($item->tag) }}.png">
-                                    &nbsp;{{$item->description}}
+                                <img  style="max-width: 100px; max-height: 100px; float: left; width: 30%;" src="/images/{{ strtolower($item->tag) }}.png">
+                                    &nbsp;<div style="white-space:normal;margin-top: 5px;float: right;width: 65%"> {{$item->description}}</div>
                                 </a>
                             </div>
                     </div>

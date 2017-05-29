@@ -11,7 +11,7 @@
         <div class="panel-body" style="width:20%; min-height: 1200px; border: 2px solid #e7e7e7; float: left; background-color: #dcf3dc " >
 
            <div style="height: 55px; width: 100%; border-bottom: 2px solid #e7e7e7;">
-              <label style="text-align: center; width: 100%;">  Other Posts </label>
+              <label style="text-align: center; width: 100%;">  Outros Posts </label>
            </div>
 
             <div style="margin-top: 15px; min-height: 100%; ">

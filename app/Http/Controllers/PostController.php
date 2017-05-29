@@ -80,6 +80,7 @@ class PostController extends Controller
 
         $body = str_replace('../', '',$body);
         $body = str_replace('upload-images/', '/upload-images/',$body);
+        $body = str_replace('<img', '<img class="img-responsive" ',$body);
 
         $post->body         = $body;
         $post->title        = $title;
