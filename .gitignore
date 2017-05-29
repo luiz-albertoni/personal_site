@@ -1,6 +1,8 @@
 vendor/
 node_modules/
 
+public/upload-images/
+
 # Laravel 5 & Lumen specific
 bootstrap/cache/
 .env.*.php
