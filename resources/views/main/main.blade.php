@@ -5,8 +5,7 @@
         <title>Albertoni</title>
 
         <link rel="stylesheet" href="{{ elixir('css/vendor.css') }}">
-        <script src="{{ elixir('js/vendor.js') }}"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
+        @include('default.includeJavaScript')
     </head>
 
     <body ng-app="app" style="background-color: #eee">

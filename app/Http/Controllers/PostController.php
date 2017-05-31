@@ -32,8 +32,7 @@ class PostController extends Controller
         $title          = $request->get('title');
         $tags           = $request->get('tag');
         $description    = $request->get('description');
-
-
+        
 
         $post = new Post ();
 
@@ -54,13 +53,24 @@ class PostController extends Controller
     public function show($id)
     {
         $post  = Post::find($id);
-        $posts = Post::get();
+        $posts = Post::get(['id', 'title']);
 
         JavaScript::put([
-            'post' => $post
+            'post'   => $post,
+            'posts'  => $posts
         ]);
 
         return view('blog/post', compact('post', 'posts'));
+    }
+
+    public function searchPost(Request $request)
+    {
+        $search_post    = $request->get('searchPost');
+
+        $posts          = Post::orderBy('created_at', 'desc')->where('title', 'like', '%' . $search_post . '%')->get();
+
+        return response()->json(['result' => $posts]);
+
     }
 
     public function edit($id)

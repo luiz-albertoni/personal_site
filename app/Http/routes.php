@@ -22,6 +22,7 @@ Route::post('/albertoni/language', function (Request $request) {
     return Redirect::back();
 });
 
+
 Route::get('/albertoni/post/{post}', 'PostController@getPost');
 
 
@@ -35,6 +36,8 @@ Route::get('/albertoni/callback', 'SocialAuthController@callback');
 Route::post('/albertoni/new/post', 'PostController@newPost');
 
 
+
+Route::get('/albertoni/blog/searchPost', 'PostController@searchPost');
 
 Route::get('/albertoni/blog/index', 'PostController@index')->name('blog_index');
 

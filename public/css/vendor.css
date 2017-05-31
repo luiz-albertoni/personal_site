@@ -7649,7 +7649,8 @@ button.close {
 
 /* dash campaign fixes */
 .post-item.col-sm-3 {
-    min-width: 200px; }
+    min-width: 200px;
+}
 
 .post-item table tbody tr td,
 .post-item table tbody tr td:first-child {

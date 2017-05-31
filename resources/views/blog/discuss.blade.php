@@ -10,8 +10,6 @@
         this.page.identifier = "Post-"+post.id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
-    console.log(disqus_config);
-
     (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://http-www-albertonisoftware-com.disqus.com/embed.js';
