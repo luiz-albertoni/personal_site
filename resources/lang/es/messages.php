@@ -3,10 +3,10 @@
 
 return [
     'welcome'               => '
-                                Bienvenido a mi aplicación. <br><br> Este es un espacio abierto y libe para criacion, 
-                                do qual pretento mantener uno blog de desenvolvimento de software,
-                                bien como trabajos recientes de la empresa e dilvugacion. <br><br>
-                                Yo espero que usted aproveille la visita. 
+                                Bienvenido a mi aplicación. <br><br> Este es un espacio libre para crear, 
+                                en el cual puede encontrar un blog de desarollo de software y
+                                trabajos recientes de la empresa. <br><br>
+                                Espero que disfrute la visita. 
                                 ',
     'language'              => 'Español',
 ];
