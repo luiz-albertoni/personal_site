@@ -34,7 +34,7 @@
                 <div ng-repeat="side_post in vm.posts" style="margin-left: 10px; margin-top: 15px;" ng-cloak>
                     <a style="color: #838383;" href="/albertoni/blog/show/post/<%side_post.id %>" >
                         <img  style="max-width: 30px; max-height: 30px" src="/images/<% side_post.tag %>.png">
-                        <% side_post.tag %> &nbsp;<% side_post.title %>
+                        &nbsp;<% side_post.title %>
                     </a>
                 </div>
             </div>
