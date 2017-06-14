@@ -53,7 +53,7 @@ class PostController extends Controller
     public function show($id)
     {
         $post  = Post::find($id);
-        $posts = Post::get(['id', 'title']);
+        $posts = Post::get(['id', 'title', 'tag']);
 
         JavaScript::put([
             'post'   => $post,
