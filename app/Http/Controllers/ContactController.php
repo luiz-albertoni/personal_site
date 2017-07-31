@@ -31,7 +31,8 @@ class ContactController extends Controller
 
         } catch (\Exception $message)
         {
-
+            Log::info($message->getMessage());
+            Log::info($message->getTraceAsString());
             return redirect()->route('home')->with('error', 'Error to send mail.');
 
         }

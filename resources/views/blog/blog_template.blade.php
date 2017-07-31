@@ -15,9 +15,7 @@
     </div>
 
     @include('default.messages')
-
-    @include('default.footer')
-
+    
 </div>
 </body>
 </html>
