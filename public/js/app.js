@@ -1,7 +1,12 @@
 (function(){
     'use strict';
 
-    var app =angular.module('app', ['ngLodash', 'restangular'], function( $interpolateProvider) {
+    var app =angular.module('app',
+        [   'ngLodash',
+            'restangular',
+            'ui.bootstrap',
+
+        ], function( $interpolateProvider) {
         $interpolateProvider.startSymbol('<%');
         $interpolateProvider.endSymbol('%>');
     });

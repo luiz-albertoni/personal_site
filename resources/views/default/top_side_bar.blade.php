@@ -9,13 +9,14 @@
             <!-- div class="navbar-left"  -->
             <div>
                 <img alt="image" style="height: 100px" class="img-responsive img-responsive" src="/images/logo.png"/>
-                <!--img alt="image" class="img-responsive img-circle" src="/images/profile.jpg"/-->
+                <!-- class="active" img alt="image" class="img-responsive img-circle" src="/images/profile.jpg"/-->
             </div>
 
             <div class="nav-left" style="font-size: 17px; ">
                 <ul class="nav navbar-nav container" style="position:absolute;bottom: 0;margin-left: 15%;;float: left;">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="{{ Request::path() ==  '/' ? 'active' : ''  }}" ><a href="/">Home</a></li>
                     <li><a href="{{ URL::route('curriculum') }}">Curriculum</a></li>
+                    <li class="{{ Request::path() ==  'albertoni/work_stuff' ? 'active' : ''  }}"><a href="{{ URL::route('work_stuff') }}">Work & Stuff</a></li>
                     <li><a href="{{ URL::route('blog') }}">Blog</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" >
