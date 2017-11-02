@@ -15,11 +15,11 @@
                     <br>
                     <li style="margin: 20px">
                         Generator of Baby's Name
-                        <ul style="margin: 15px;border:  solid 1px; height: 90px; ">
+                        <ul style="margin: 15px;border:  solid 1px; height: 120px; ">
 
                             <img style="float: left; margin-right: 30px;    margin-top: 10px;" src="/images/baby-white-background.png">
 
-                            <span style="float: left;  margin-right: 250px; margin-top: 10px;">This is an application to generate names using an special algorithmic which is feed by user data, <br>
+                            <span style="float: left;  margin-right: 10px; margin-top: 10px; width: 49%;">This is an application to generate names using an special algorithmic which is feed by user data, <br>
                                                                                 keep a list and make fun of a close friend. This is my first app using Ionic, so it was made with <br>
                                                                                 purpose of study.
                              </span>
