@@ -28,4 +28,11 @@ class FileController extends Controller
         return response()->file($pathToFile);
     }
 
+    public function getApp($app_type, $app_name)
+    {
+        $path_to_file = sprintf('/app/public/apps/%s/%s', $app_type, $app_name);
+        $path_to_file = storage_path($path_to_file);
+        return response()->file($path_to_file);
+    }
+
 }

@@ -23,6 +23,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/albertoni/work_stuff', 'WorkController@index')->name('work_stuff');
 
+    Route::get('/albertoni/download/app/{app_type}/{app_name}', 'FileController@getApp');
+
 
     Route::post('/albertoni/language', function (Request $request) {
 
