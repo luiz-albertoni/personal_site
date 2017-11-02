@@ -31,7 +31,7 @@ class FileController extends Controller
     public function getApp($app_type, $app_name)
     {
         $path_to_file = sprintf('/app/public/apps/%s/%s', $app_type, $app_name);
-        $path_to_file = storage_path($path_to_file);
+        $path_to_file = storage_path($path_to_file, ['Content-Type'=>'application/vnd.android.package-archive']);
         return response()->file($path_to_file);
     }
 
