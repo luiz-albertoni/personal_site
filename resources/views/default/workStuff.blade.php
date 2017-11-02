@@ -23,7 +23,7 @@
                                                                                 keep a list and make fun of a close friend. This is my first app using Ionic, so it was made with <br>
                                                                                 purpose of study.
                              </span>
-                            <a style="float: left; margin-top: 10px;" href="/albertoni/download/app/android/babename.apk">
+                            <a style="float: left; margin-top: 10px;" type="application/vnd.android.package-archive" href="/albertoni/download/app/android/babename.apk">
                                 <img  style="margin-top: 5px;" src="/images/download-android.png" height="60" width="200">
                             </a>
                         </ul>
