@@ -8,7 +8,7 @@
             </div>
             <!-- div class="navbar-left"  -->
             <div>
-                <img alt="image" style="height: 100px" class="img-responsive img-responsive" src="/images/logo.png"/>
+                <img alt="image" style="height: 100px" class="img-responsive img-responsive" src="/images/mini-logo.png"/>
                 <!-- class="active" img alt="image" class="img-responsive img-circle" src="/images/profile.jpg"/-->
             </div>
 
