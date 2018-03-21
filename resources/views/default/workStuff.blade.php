@@ -35,7 +35,7 @@
 
                             <span style="float: left;  margin-right: 10px; margin-top: 10px; width: 49%;">Test lottie
                              </span>
-                            <a style="float: left; margin-top: 10px;" type="application/vnd.android.package-archive" href="/albertoni/download/app/android/android-release.apk">
+                            <a style="float: left; margin-top: 10px;" type="application/vnd.android.package-archive" href="/albertoni/download/app/android/minhas-vacinas.apk">
                                 <img  style="margin-top: 5px;" src="/images/download-android.png" height="60" width="200">
                             </a>
                         </ul>
