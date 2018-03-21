@@ -28,18 +28,6 @@
                             </a>
                         </ul>
                     </li>
-                    <li style="margin: 20px">
-                        Generator of Baby's Name
-                        <ul style="margin: 15px;border:  solid 1px; height: 120px; ">
-
-
-                            <span style="float: left;  margin-right: 10px; margin-top: 10px; width: 49%;">Test lottie
-                             </span>
-                            <a style="float: left; margin-top: 10px;" type="application/vnd.android.package-archive" href="/albertoni/download/app/android/minhas-vacinas.apk">
-                                <img  style="margin-top: 5px;" src="/images/download-android.png" height="60" width="200">
-                            </a>
-                        </ul>
-                    </li>
 
                     <br>
                     <br>
